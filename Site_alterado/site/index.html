@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SuaMarca Seguros</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+<header id="inicio">
+
+  <nav>
+
+    <div class="logo">
+        Sua<span>Marca</span>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="hero">
+
+    <div class="hero-text">
+
+      <h1>Proteja o que realmente importa.</h1>
+
+      <p>
+        Seguros modernos para sua vida, veículo, residência e empresa.
+        Atendimento rápido, humano e cobertura completa.
+      </p>
+
+      <div class="buttons">
+        <button class="btn btn-primary">
+          Fazer Cotação
+        </button>
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <h3>Solicite uma cotação</h3>
+
+      <form class="quote-form">
+
+        <input type="text" placeholder="Seu nome">
+
+        <select>
+          <option>Tipo de seguro</option>
+          <option>Seguro Auto</option>
+          <option>Seguro Residencial</option>
+          <option>Seguro Empresarial</option>
+          <option>Seguro de Vida</option>
+        </select>
+
+        <a
+          href="https://wa.me/5582999999999?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação%20de%20seguro."
+          target="_blank"
+        >
+
+          <button
+            type="button"
+            class="btn whatsapp-btn"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            Atendimento via WhatsApp
+          </button>
+
+        </a>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</header>
+
+<section>
+
+  <div class="stats">
+
+    <div class="stat">
+      <h3>25k+</h3>
+      <p>Clientes protegidos</p>
+    </div>
+
+    <div class="stat">
+      <h3>98%</h3>
+      <p>Satisfação dos clientes</p>
+    </div>
+
+    <div class="stat">
+      <h3>24h</h3>
+      <p>Assistência rápida</p>
+    </div>
+
+    <div class="stat">
+      <h3>10+</h3>
+      <p>Anos de experiência</p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <h2>SuaMarca Seguros</h2>
+
+  <p>WhatsApp: (82) 99999-9999</p>
+   <p>
+    Rua das Palmeiras, 245
+    Bairro Centro
+    Aracaju - SE
+    CEP: 49000-000
+  </p>
+  <p style="margin-top:20px;">
+    © 2026 SuaMarca Seguros. Todos os direitos reservados.
+  </p>
+
+</footer>
+
+<script>
+
+function toggleBox(id){
+
+  const allBoxes = document.querySelectorAll('.info-box');
+
+  allBoxes.forEach(box => {
+
+    if(box.id !== id){
+      box.classList.remove('active');
+    }
+
+  });
+
+  const currentBox = document.getElementById(id);
+
+  currentBox.classList.toggle('active');
+
+}
+
+</script>
+
+</body>
+</html>
